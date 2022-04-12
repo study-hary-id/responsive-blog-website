@@ -38,7 +38,8 @@ img {
 Image Utilities
 ========================== */
 
-.article-featured .article-image {
+.article-featured .article-image,
+.main .article-image {
   height: 250px;
   object-fit: cover;
 }
@@ -110,6 +111,14 @@ strong {
 .article-title {
   font-size: var(--heading-2);
   margin: 0;
+}
+
+.main .article-title {
+  margin: .83em 0;
+}
+
+.article-subtitle {
+  color: var(--accent-color);
 }
 
 .article-info,
@@ -188,6 +197,10 @@ header {
   text-align: center;
   padding: 2em 0;
   margin-bottom: 2em;
+}
+
+.main {
+  margin-bottom: 3em;
 }
 
 footer {
