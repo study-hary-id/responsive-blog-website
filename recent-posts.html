@@ -26,9 +26,9 @@
     </div>
     <nav>
       <ul>
-        <li><a href="index.html" class="current-page">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="about-me.html">About me</a></li>
-        <li><a href="recent-posts.html">Recent posts</a></li>
+        <li><a class="current-page" href="recent-posts.html">Recent posts</a></li>
       </ul>
     </nav>
   </div> <!-- / .container -->
@@ -36,20 +36,24 @@
 
 <div class="container container-flex">
   <main role="main">
-    <article class="article-featured" id="article-featured">
-      <h2 class="article-title">Finding simplicity in life</h2>
-      <img
-        src="static/img/life.jpg"
-        alt="A plant on the table with a study lamp and a wall clock"
-        class="article-image object-position-bottom"
-      >
-      <p class="article-info">July 23, 2019 | 3 comments</p>
-      <p class="article-body">
-        <strong>Life can get complicated really quickly</strong>, but it doesn't have to be! There are many ways to
-        simplify your life, <a href="#article-featured">a few of which we've explored in the past</a>. This week we're
-        taking a bit of an approach though, in how you can find simplicity in the life you already living.
-      </p>
-      <a href="#" class="article-read-more">continue reading</a>
+    <article class="article-recent">
+      <div class="article-recent-main">
+        <h2 class="article-title">Finding simplicity in life</h2>
+        <p class="article-body">
+          <strong>Life can get complicated really quickly</strong>, but it doesn't have to be! There are many ways to
+          simplify your life, <a href="#">a few of which we've explored in the past</a>. This week we're
+          taking a bit of an approach though, in how you can find simplicity in the life you already living.
+        </p>
+        <a href="#" class="article-read-more">continue reading</a>
+      </div>
+      <div class="article-recent-secondary">
+        <img
+          src="static/img/life.jpg"
+          alt="Simple white desk on a white wall with a plant on the far right side"
+          class="article-image"
+        >
+        <p class="article-info">July 23, 2019 | 3 comments</p>
+      </div>
     </article>
 
     <article class="article-recent">
@@ -114,7 +118,7 @@
     </article>
   </main>
 
-  <aside class="sidebar" id="sidebar">
+  <aside class="sidebar">
     <div class="sidebar-widget">
       <h2 class="widget-title">About Me</h2>
       <img
@@ -127,8 +131,38 @@
       </p>
     </div>
 
-    <div class="sidebar-widget" id="widget-recent-posts">
+    <div class="sidebar-widget">
       <h2 class="widget-title">Recent Posts</h2>
+      <div class="widget-recent-post">
+        <h3 class="widget-recent-post-title">
+          <a href="#">Keeping cooking simple</a>
+        </h3>
+        <img
+          src="static/img/food.jpg"
+          alt="A japanese food in a bowl and a chopstick"
+          class="widget-image"
+        >
+      </div>
+      <div class="widget-recent-post">
+        <h3 class="widget-recent-post-title">
+          <a href="#">Simplicity and work</a>
+        </h3>
+        <img
+          src="static/img/work.jpg"
+          alt="A simple table with desk and a chair"
+          class="widget-image"
+        >
+      </div>
+      <div class="widget-recent-post">
+        <h3 class="widget-recent-post-title">
+          <a href="#">Simple decorations</a>
+        </h3>
+        <img
+          src="static/img/deco.jpg"
+          alt="A plant in a bottle with water"
+          class="widget-image object-position-left"
+        >
+      </div>
     </div>
   </aside>
 </div>
@@ -136,6 +170,5 @@
 <footer>
   <p>&copy; 2022 <strong>Living the simple life</strong></p>
 </footer>
-<script src="static/js/script.js"></script>
 </body>
 </html>
